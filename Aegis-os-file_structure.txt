@@ -1,0 +1,18 @@
+aegis-os/  # Or analyn-os if you prefer
+├── 📁 config/
+│   ├── 📄 persona.yaml          # Name, personality, style
+│   ├── 📄 settings.yaml         # Technical settings
+│   └── 📄 capabilities.yaml     # Enabled/disabled features
+├── 📁 core/
+│   ├── 📄 persona_engine.py     # NEW: Loads & applies persona config
+│   ├── 📄 orchestrator.py
+│   └── 📄 context_manager.py
+├── 📁 personas/                 # NEW: Pre-built personality templates
+│   ├── 📄 analytical_guardian.yaml
+│   ├── 📄 creative_partner.yaml
+│   └── 📄 gaming_companion.yaml  # Your Analyn as a template!
+├── 📁 agents/
+│   └── 📁 conversation/
+│       ├── 📄 persona_injector.py  # Applies persona to prompts
+│       └── 📄 response_generator.py
+└── 📄 persona_builder.py       # NEW: Interactive setup wizard
